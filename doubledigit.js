@@ -40,13 +40,27 @@ function printDoubleDigit(value){
         
         case (value == 4):
             function printFourties(){
-        
+                for (k = 0; k < digits.length; k++) {
+
+                    for (b = 0; b < four.length; b++) {
+                        console.log(four[b] + digits[k][b])
+                    }
+
+                }
+                printFourties();
             }
             break;
         
         case (value == 5):
             function printFifties(){
-        
+                for (k = 0; k < digits.length; k++) {
+
+                    for (b = 0; b < five.length; b++) {
+                        console.log(five[b] + digits[k][b])
+                    }
+
+                }
+                printFifties();
             }
             break;
         
