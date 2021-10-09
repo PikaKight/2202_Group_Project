@@ -30,11 +30,25 @@ function printDoubleDigit(value){
         }
         
         case (value = 4):function printFourties(){
-        
+            for (k = 0; k <= 9; k++) {
+
+                for (b = 0; b <= 3; b++) {
+                    console.log(four[b] + " " + digits[k][b])
+                }
+
+            }
+            printFourties();
         }
         
         case (value = 5):function printFifties(){
-        
+            for (k = 0; k <= 9; k++) {
+
+                for (b = 0; b <= 3; b++) {
+                    console.log(five[b] + " " + digits[k][b])
+                }
+
+            }
+            printFifties();
         }
         
         case (value = 6):function printSixties(){
