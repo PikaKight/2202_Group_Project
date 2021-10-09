@@ -110,6 +110,7 @@ function printDoubleDigit(value){
                 }     
                 console.log(eighties);
             }
+            printEighties()
             break;
         
         case (value == 9):
@@ -126,8 +127,9 @@ function printDoubleDigit(value){
                     }
                 }     
                 console.log(nineties);
-                    
+
             }
+            printNinties()
             
     }    
 }
