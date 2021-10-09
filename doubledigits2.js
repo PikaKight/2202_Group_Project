@@ -18,13 +18,25 @@ function printTens(){
         
 }
         
-function printTwinties(){
+function printTwenties(){
+    for(x=0;x<digits.length;x++) {
         
-}
+        for (i = 0; i < two.length; i++)
+        {
+            console.log(two[i] + " " + digits[x][i]);
+        }
+    }
+}     
         
 function printThirties(){
+    for(x=0;x<digits.length;x++) {
         
-}
+        for (i = 0; i < three.length; i++)
+        {
+            console.log(three[i] + " " + digits[x][i]);
+        }
+    }
+}     
         
 function printFourties(){
     for (k = 0; k < digits.length; k++) {
@@ -100,6 +112,8 @@ function printNinties(){
 }
 
 if (!module.parent){
+    printTwenties();
+    printThirties();
     printFourties();
     printFifties();
     printSixties();
