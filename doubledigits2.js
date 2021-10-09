@@ -27,19 +27,45 @@ function printThirties(){
 }
         
 function printFourties(){
-        
+    for (k = 0; k < digits.length; k++) {
+
+        for (b = 0; b < four.length; b++) {
+            console.log(four[b] + digits[k][b])
+        }
+
+    }
 }
         
 function printFifties(){
-        
+    for (k = 0; k < digits.length; k++) {
+
+        for (b = 0; b < five.length; b++) {
+            console.log(five[b] + digits[k][b])
+        }
+
+    }
 }
         
 function printSixties(){
+    for(f=0;f<digits.length;f++)
+    {
         
+        for (i = 0; i < six.length; i++)
+        {
+            console.log(six[i] + " " + digits[f][i])
+        }
+    }
 }
         
 function printSeventies(){
+    for(f=0;f<digits.length;f++)
+    {
         
+        for (i = 0; i < seven.length; i++)
+        {
+            console.log(seven[i] + " " + digits[f][i]);
+        }
+    }
 }
 
 function printEighties(){
@@ -74,6 +100,10 @@ function printNinties(){
 }
 
 if (!module.parent){
+    printFourties();
+    printFifties();
+    printSixties();
+    printSeventies();
     printEighties();
     printNinties();
 }
