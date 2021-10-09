@@ -11,11 +11,23 @@ let nine = [" _ ", "|_|", "  |"];
 let digits = [zero, one, two, three, four, five, six, seven, eight, nine];
 
 function printSingles(){
-    
+     for (i = 0; i < digits.length; i++) 
+     {
+         for (k = 0; k < zero.length; k++)
+         {
+             console.log(zero[k] + digits[i][k]);
+         }
+     }
 }
         
 function printTens(){
-    
+     for (i = 0; i < digits.length; i++) 
+     {
+         for (k = 0; k < zero.length; k++)
+         {
+             console.log(one[k] + digits[i][k]);
+         }
+     }
 }
         
 function printTwenties(){
