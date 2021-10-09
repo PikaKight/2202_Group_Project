@@ -1,5 +1,5 @@
 let zero = [" _ ","| |","|_|"];
-let one = ["   ","|  ","|  "];
+let one = ["  ","| ","| "];
 let two = [" _ "," _|","|_ "];
 let three = [" _ "," _|"," _|"];
 let four = ["   ", "|_|", "  |"];
@@ -15,17 +15,17 @@ function printSingles(){
      {
          for (k = 0; k < zero.length; k++)
          {
-             console.log(zero[k] + digits[i][k];
+             console.log(zero[k] + digits[i][k]);
          }
      }
 }
         
 function printTens(){
-     for (i = o; i < digits.length; i++) 
+     for (i = 0; i < digits.length; i++) 
      {
          for (k = 0; k < zero.length; k++)
          {
-             console.log(one[k] + digits[i][k];
+             console.log(one[k] + digits[i][k]);
          }
      }
 }
@@ -94,13 +94,9 @@ function printSeventies(){
 
 function printEighties(){
     let eighties = "";
-    let firstDigit = digits[8];
     for (i=0; i < digits.length; i++){
-        
-        let secondDigit = digits[i];
-        
         for (j = 0; j < 3; j++){
-            eighties += firstDigit[j] + secondDigit[j];
+            eighties += digits[8][j] + digits[i][j];
             eighties += "\n"; 
         }
    }     
@@ -109,13 +105,9 @@ function printEighties(){
         
 function printNinties(){
     let nineties = "";
-    let firstDigit = digits[9];
     for (i=0; i < digits.length; i++){
-        
-        let secondDigit = digits[i];
-        
         for (j = 0; j < 3; j++){
-            nineties += firstDigit[j] + secondDigit[j];
+            nineties += digits[9][j] + digits[i][j];
             nineties += "\n"; 
         }
    }     
@@ -124,6 +116,8 @@ function printNinties(){
 }
 
 if (!module.parent){
+    printSingles();
+    printTens();
     printTwenties();
     printThirties();
     printFourties();
