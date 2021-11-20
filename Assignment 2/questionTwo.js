@@ -17,7 +17,6 @@ for (info in jobs) {
 }
 
 uniqueCities = ["tempCity"]; 
-
 function filterCity(compareCity) { //filters allCities to get list of cities with no duplicates
     value = true;
     for (k = 0; k < uniqueCities.length; k++) {
