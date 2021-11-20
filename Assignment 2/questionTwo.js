@@ -51,6 +51,7 @@ for (i = 0; i < uniqueCities.length; i++) {
 
 largestNum = resultsNumber[0];
 largestCity = uniqueCities[0];
+
 for (i = 0; i < resultsNumber.length; i++) {
     if (resultsNumber[i] > largestNum) {
         largestNum = resultsNumber[i];
