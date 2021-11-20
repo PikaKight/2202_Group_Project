@@ -1,5 +1,27 @@
 const jobs = require('../Assignment 2/jobs.json');
 
+function categoryCount(categoriesList, jobs, i){
+    const categories = jobs[i]["categories"];
+    categories.forEach( function (cat){
+        if (cat in categoriesList){
+            categoriesList[cat] += 1;
+            return;
+        }
+        
+        categoriesList[cat] = 1;
+    });
+}
+
+function findFirstMax(city){
+    var max = Object.keys(city)[0];
+    for (key in city){
+        if (city[max] < city[key]){
+            max = key;
+        }       
+    }
+
+    return max;
+}
 
 let cities = {};
 
@@ -22,18 +44,8 @@ for (i in jobs){
     cities[city] = categoriesList;
 }
 
-function categoryCount(categoriesList, jobs, i){
-    const categories = jobs[i]["categories"];
-    categories.forEach( function (cat){
-        if (cat in categoriesList){
-            categoriesList[cat] += 1;
-            return;
-        }
-        
-        categoriesList[cat] = 1;
-    });
+
+for (city in cities){
+    console.log("Most popular category in %s is : %s", city, findFirstMax(cities[city]));
 }
-
-
-console.log(cities);
 
