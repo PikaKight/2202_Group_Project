@@ -7,9 +7,9 @@ Write a function that will print double digits of a given value preset in the cl
 ## Assignment 2
 Using the dataset from https://www.kaggle.com/mullervilmos/it-jobs answer the following:
 
-- [ ] 1. What is the category with the most job postings, and how many are they?
-- [ ] 2. Which city has the most job postings, and how many are they?
-- [ ] 3. What is the most popular category in each city?
+- [X] 1. What is the category with the most job postings, and how many are they?
+- [X] 2. Which city has the most job postings, and how many are they?
+- [X] 3. What is the most popular category in each city?
 
 ### **Note**
 - Ignore any data that don't mention any cities
