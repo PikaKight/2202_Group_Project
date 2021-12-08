@@ -1,5 +1,5 @@
 const fs = require('fs');
-let readingPromise =fs.promises.readFile('./Optimism_and_your_health.txt',);
+let readingPromise =fs.promises.readFile('./Assignment 3/Optimism_and_your_health.txt');
 readingPromise.then(function(result)
 {
     // result is a buffer object
