@@ -1,5 +1,5 @@
-function counting(reading) {
-    const words = require("./words.json")
+function counting(reading, words) {
+
     let [synonyms, related, near_antonyms, antonyms] = [0, 0, 0, 0];
     for (i = 0; i < reading.length; i++) {
         reading[i] = reading[i].replace("(", "").replace(")", "").replace(".", "").replace("\"", "").replace(",", "").replace(":", "").replace("...", "").replace("?", "").replace(";", "").toLowerCase();
