@@ -2,10 +2,12 @@ function counting(reading) {
     const words = require("./words.json")
     let [synonyms, related, near_antonyms, antonyms] = [0, 0, 0, 0];
     for (i = 0; i < reading.length; i++) {
-        reading[i] = reading[i].replace("(", "").replace(")", "").replace("\"", "").replace(",", "").replace(".", "").replace(":", "").replace("...", "").replace("?", "").replace(";", "");
+        reading[i] = reading[i].replace("(", "").replace(")", "").replace(".", "").replace("\"", "").replace(",", "").replace(":", "").replace("...", "").replace("?", "").replace(";", "").toLowerCase();
+
 
         if (words["Synonyms"].includes(reading[i])) {
             synonyms += 1;
+            console.log(reading[i])
         }
         if (words["Related"].includes(reading[i])) {
             related += 1;
