@@ -2,10 +2,7 @@ const { count } = require("console");
 
 function counting(reading){
     const words = require("./words.json")
-    let synonyms  = 0; 
-    let related = 0;
-    let near_antonyms = 0;
-    let antonyms = 0; 
+    let [synonyms,related,near_antonyms,antonyms] = [0,0,0,0]; 
     i = 0;
     for (element of reading){
         if (element in words["Synonyms"]){
@@ -23,7 +20,7 @@ function counting(reading){
         i++
     }
 
-    return synonyms, related, near_antonyms, antonyms, i, reading.length;    
+    return [synonyms, related, near_antonyms, antonyms];    
 }
 
 module.exports = counting;
@@ -36,6 +33,6 @@ if (require.main === module) {
           return
         }
         text = data.split(/\s+/g);
-        console.log(text)
+        console.log(counting(text))
       })
 }
