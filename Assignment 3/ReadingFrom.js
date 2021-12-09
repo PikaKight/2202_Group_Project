@@ -8,7 +8,7 @@ readingPromise.then(function(result)
     //you can remove this whenever you want
     console.log(reToString);
 
-    //add call to reading function or the actual function here
+    //add call to counter function or the actual function here
     
 }).catch(function(error)
 {
