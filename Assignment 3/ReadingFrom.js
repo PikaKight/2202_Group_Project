@@ -13,6 +13,8 @@ readingPromise.then(function(result)
     //add call to counter function or the actual function here
     let countedArray = counting(fileArray);
     
+    // add call to write to file here
+    
 }).catch(function(error)
 {
     console.log(error);
