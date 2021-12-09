@@ -7,7 +7,6 @@ function counting(reading) {
 
         if (words["Synonyms"].includes(reading[i])) {
             synonyms += 1;
-            console.log(reading[i])
         }
         if (words["Related"].includes(reading[i])) {
             related += 1;
